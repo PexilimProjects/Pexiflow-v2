@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.GradientBlack{
+    background: linear-gradient(93deg, #1A1D1F 30.66%, #363636 81.39%);
+}
+input {
+    border:none;
+    background-image:none;
+    background-color:transparent;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+@font-face {
+    font-family: "Satoshi";
+    src: url("./Assets/Satoshi-Regular.otf");
+  }
+  
+  body{
+      font-family: 'Satoshi';
+  }
+  .button-animate, .input-animate {
+    transition: opacity 0.4s ease;
+  }
+  
+  .fade-out {
+    opacity: 0;
+  }
+  
+  .input-animate {
+    opacity: 0; /* Start with input invisible */
+    animation: fadeIn 0.4s ease forwards; /* Animation to fade in */
+  }
+  
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
